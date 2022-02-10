@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphical Password</title>
+
+    <style>
+        img{
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="selection">
+        Select number of image: <select name="" id="num">
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+        <br>
+        Select category: <select name="" id="category">
+            <option value="bike">Bike</option>
+            <option value="car">Car</option>
+            <option value="choco">Chocolate</option>
+        </select>
+        <br><br>
+        <button class="selection" onclick="getDetails();">Submit</button>
+    </div>
+
+    <div class="container" style="display: none;">
+        <h1>Select in a order</h1>
+        <div class="showimages1"></div>
+        <h3 id="hashed"></h3>
+        <br><br>
+        <button style="display: none;" class="next-btn" onclick="next();">Submit</button>
+    </div>
+
+    <div class="container2" style="display: none;">
+        <h1>Enter in the right order</h1>
+        <div class="showimages2"></div>
+        <h3 id="hashed2"></h3>
+        <br><br>
+        <button style="display: none;" class="submit-btn" onclick="check();">Submit</button>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
